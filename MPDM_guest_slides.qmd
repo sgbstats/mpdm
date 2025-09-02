@@ -24,47 +24,44 @@ csl: csl/harvard-cite-them-right.csl
 2.  Exploratory data analysis
 3.  Simpson's paradox
 
-## Warm up activity 
+## Warm up activity {.smaller}
 
-:::: incremental 
-::: {.small}
-- Pick a digital touchpoint that you have hit in the last 24h
+::: incremental
+-   Pick a digital touchpoint that you have hit in the last 24h
 
-- Now think about the hundreds, thousands, millions of hits that your touchpoint has received
+-   Now think about the hundreds, thousands, millions of hits that your touchpoint has received
 
-- What data has been collected?
+-   What data has been collected?
 
-- What data can be analysed and how would you analyse it?
+-   What data can be analysed and how would you analyse it?
 
-- What actions could you take as a marketeer?
+-   What actions could you take as a marketeer?
 
 -   Some bits of data are better quality than others
 
 -   Feel free to work quietly in small groups
 :::
-::::
+
 ## E.g. Buying a coffee on the Caffe Nero app
 
-:::: {.incremental} 
-::: {.small}
--  Time/date
-- Location
-- Order
-  - Addons
-- Payment method
-- Vouchers used
-- Click-and-collect or pay at counter
-- Sit in or takeaway
-- Cart abandonment
+::: incremental
+-   Time/date
+-   Location
+-   Order
+    -   Addons
+-   Payment method
+-   Vouchers used
+-   Click-and-collect or pay at counter
+-   Sit in or takeaway
+-   Cart abandonment
 :::
-::::
 
----
+------------------------------------------------------------------------
 
 ::: incremental
-- Vouchers after being absent
-- More prominent up sell if I never get add-ons
-- Push notification if there is a quieter shop nearby
+-   Vouchers after being absent
+-   More prominent up sell if I never get add-ons
+-   Push notification if there is a quieter shop nearby
 :::
 
 # Exploratory data analysis
@@ -99,6 +96,7 @@ Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://
 -   Either on your own or in a small group download one of them and explore it
 -   In the data folder is the text and images from the previous couple of slides
 -   If you have finished one dataset pick another and repeat
+-   Data courtesy of @matejka2017 and @gillespie
 :::
 
 ## What have we found?
@@ -160,7 +158,7 @@ You may have seen Anscombe's Quartet yesterday
 
 ![Anscombe's Quartet [@anscombe1973] image from Wiki [@AnscombeWiki]](img/AQ.png)
 
----
+------------------------------------------------------------------------
 
 ```{r, message=FALSE,echo=FALSE}
 
@@ -191,6 +189,7 @@ datasaurus_dozen %>%
   theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
   facet_wrap(~dataset, ncol = 2)
 ```
+
 These are dataset 2 and 3 from earlier
 
 ## But what happens if we now add labels to the data?
@@ -252,6 +251,7 @@ dataset3a %>%
 ```
 
 ------------------------------------------------------------------------
+
 and similarly for dataset 3
 
 ```{r, message=FALSE,echo=FALSE}
@@ -270,24 +270,20 @@ dataset3a %>%
 
 ------------------------------------------------------------------------
 
-:::::: columns
+::::: columns
 ::: {.column width="40%"}
 ![](img/Edward_H._Simpson.jpg)
 :::
 
-:::: {.column width="60%"}
-::: nonincremental
+::: {.column width="60%"}
 -   This is what we call Simpson's Paradox [@simpson1951; @kievit2013].
 -   Sometimes the direction of the correlation changes when we look at each subgroup
 :::
-::::
-::::::
+:::::
 
 ------------------------------------------------------------------------
 
-![@pacesvwiki2017](img/Simpsons_paradox_-_animation.gif)
-
-# Thank you
+![](img/Simpsons_paradox_-_animation.gif) \# Thank you
 
 Any questions?
 
