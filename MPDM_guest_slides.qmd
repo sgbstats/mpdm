@@ -7,7 +7,6 @@ bibliography: references.bib
 csl: csl/harvard-cite-them-right.csl
 ---
 
-
 ## Who am I?
 
 -   Medical Statistician at Manchester hospitals
@@ -67,6 +66,7 @@ When you are given a dataset to work with it can often be quite daunting. The mo
 ## What to look for
 
 ::: incremental
+-   Number of obervations
 -   Data types (continuous, categorical, ordinal, time series)
 -   Mean/Mode/Median
 -   Distribution
@@ -78,5 +78,10 @@ When you are given a dataset to work with it can often be quite daunting. The mo
 
 ![Graph flowchart [@yau2009]](img/choosechart.jpg)
 
+## Activity
+
+::: incremental
+Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> - On this page are 13 datasets - Either on your own or in a small group download one of them and explore it
+:::
 
 # References
