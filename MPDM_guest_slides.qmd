@@ -1,13 +1,12 @@
 ---
 title: "MPDM Guest Lecture"
 author: "Seb Bate"
-format: 
-  revealjs:
-    incremental: true
+format: revealjs
 editor: visual
 bibliography: references.bib
 csl: csl/harvard-cite-them-right.csl
 ---
+
 
 ## Who am I?
 
