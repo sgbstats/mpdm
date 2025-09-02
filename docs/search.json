@@ -18,7 +18,7 @@
     "href": "index.html#warm-up-activity",
     "title": "MPDM Guest Lecture",
     "section": "Warm up activity",
-    "text": "Warm up activity\n\nThis morning, how many times and where have you handed over data that could be used by a marketer?\n\nThink about all times you have hit a digital touchpoint?\nSome bits of data are better quality than others\nFeel free to work quietly in small groups"
+    "text": "Warm up activity\n\n\n\nPick a digital touchpoint that you have hit in the last 24h\nNow think about the hundreds, thousands, millions of hits that your touchpoint has received\nWhat data has been collected?\nWhat data can be analysed and how would you analyse it?\nWhat actions could you take as a marketeer?\nSome bits of data are better quality than others\nFeel free to work quietly in small groups"
   },
   {
     "objectID": "index.html#my-day-so-far",
@@ -95,21 +95,21 @@
     "href": "index.html#i-think-i-have-seen-something-like-this-before",
     "title": "MPDM Guest Lecture",
     "section": "I think I have seen something like this before?",
-    "text": "I think I have seen something like this before?\nYou may have seen Anscombe’s Quartet yesterday\n\n\n\nAnscombe’s Quartet (Anscombe, 1973) image from Wiki (Wikipedia contributors, 2025)"
+    "text": "I think I have seen something like this before?\nYou may have seen Anscombe’s Quartet yesterday\n\nAnscombe’s Quartet (Anscombe, 1973) image from Wiki (Wikipedia contributors, 2025)"
   },
   {
     "objectID": "index.html#what-do-we-notice-here",
     "href": "index.html#what-do-we-notice-here",
     "title": "MPDM Guest Lecture",
     "section": "What do we notice here?",
-    "text": "What do we notice here?"
+    "text": "What do we notice here?\n\nThese are dataset 2 and 3 from earlier"
   },
   {
     "objectID": "index.html#but-what-happens-if-we-now-add-labels-to-the-data",
     "href": "index.html#but-what-happens-if-we-now-add-labels-to-the-data",
     "title": "MPDM Guest Lecture",
     "section": "But what happens if we now add labels to the data?",
-    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n          x        y      label\n1  58.45976 14.14866      Gen Z\n2  35.40474 31.93916      Gen Z\n3  59.31099 10.57214      Gen Z\n4  37.08825 60.85723 Millennial\n5  55.74124 46.65358 Millennial\n6  67.30258 64.41346      Gen X\n7  64.09100 68.65099      Gen X\n8  37.54370 32.88402      Gen Z\n9  31.39965 39.26526      Gen Z\n10 64.59632 65.95251      Gen X\n\n\n[1] \"Gen A\"      \"Gen Z\"      \"Millennial\" \"Gen X\"      \"Boomer\""
+    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n          x        y      label\n1  20.93200 51.64624      Gen Z\n2  52.42152 47.86701 Millennial\n3  53.17861 98.60386     Boomer\n4  86.85371 65.54332     Boomer\n5  25.95260 73.03318 Millennial\n6  59.01414 93.57487     Boomer\n7  72.46241 27.62426 Millennial\n8  46.38607 51.00216 Millennial\n9  57.11245 15.32179      Gen Z\n10 58.94317 11.61288      Gen Z\n\n\n[1] \"Gen A\"      \"Gen Z\"      \"Millennial\" \"Gen X\"      \"Boomer\""
   },
   {
     "objectID": "index.html#references",
@@ -117,5 +117,19 @@
     "title": "MPDM Guest Lecture",
     "section": "",
     "text": "This is what we call Simpson’s Paradox (Simpson, 1951; Kievit et al., 2013)\n# References\n\n\n\n\nAnscombe, F.J. (1973) “Graphs in statistical analysis,” The American Statistician, 27(1), pp. 17–21. Available at: https://doi.org/10.2307/2682899.\n\n\nKievit, R. et al. (2013) “Simpson’s paradox in psychological science: A practical guide,” Frontiers in Psychology, 4. Available at: https://doi.org/10.3389/fpsyg.2013.00513.\n\n\nSimpson, E.H. (1951) “The interpretation of interaction in contingency tables,” Journal of the Royal Statistical Society: Series B (Methodological), 13(2), pp. 238–241. Available at: https://doi.org/10.1111/j.2517-6161.1951.tb00088.x.\n\n\nWikipedia contributors (2025) Anscombe’s quartet. https://en.wikipedia.org/wiki/Anscombe%27s_quartet.\n\n\nYau, N. (2009) Flow Chart Shows You What Chart to Use. Available at: https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/ (Accessed: September 2, 2025)."
+  },
+  {
+    "objectID": "index.html#buying-a-coffee-on-the-caffe-nero-app",
+    "href": "index.html#buying-a-coffee-on-the-caffe-nero-app",
+    "title": "MPDM Guest Lecture",
+    "section": "Buying a coffee on the Caffe Nero app",
+    "text": "Buying a coffee on the Caffe Nero app\n\nExploratory data analysis"
+  },
+  {
+    "objectID": "index.html#e.g.-buying-a-coffee-on-the-caffe-nero-app",
+    "href": "index.html#e.g.-buying-a-coffee-on-the-caffe-nero-app",
+    "title": "MPDM Guest Lecture",
+    "section": "E.g. Buying a coffee on the Caffe Nero app",
+    "text": "E.g. Buying a coffee on the Caffe Nero app\n\n\n\nTime/date\nLocation\nOrder\n\nAddons\n\nPayment method\nVouchers used\nClick-and-collect or pay at counter\nSit in or takeaway\nCart abandonment"
   }
 ]

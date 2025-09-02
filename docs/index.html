@@ -49,6 +49,7 @@
       margin-left: 2em;
     }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-e9506f4cf0740638825fabafd1e71958.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -180,41 +181,48 @@ Seb Bate
 <section id="warm-up-activity" class="slide level2">
 <h2>Warm up activity</h2>
 <div>
-<p>This morning, how many times and where have you handed over data that could be used by a marketer?</p>
+<div class="small">
 <ul>
-<li class="fragment"><p>Think about all times you have hit a digital touchpoint?</p></li>
+<li class="fragment"><p>Pick a digital touchpoint that you have hit in the last 24h</p></li>
+<li class="fragment"><p>Now think about the hundreds, thousands, millions of hits that your touchpoint has received</p></li>
+<li class="fragment"><p>What data has been collected?</p></li>
+<li class="fragment"><p>What data can be analysed and how would you analyse it?</p></li>
+<li class="fragment"><p>What actions could you take as a marketeer?</p></li>
 <li class="fragment"><p>Some bits of data are better quality than others</p></li>
 <li class="fragment"><p>Feel free to work quietly in small groups</p></li>
 </ul>
 </div>
+</div>
 </section>
-<section id="my-day-so-far" class="slide level2 smaller">
-<h2>My day so far</h2>
+<section id="e.g.-buying-a-coffee-on-the-caffe-nero-app" class="slide level2">
+<h2>E.g. Buying a coffee on the Caffe Nero app</h2>
 <div>
+<div class="small">
 <ul>
-<li class="fragment">Woke up and scrolled on <strong>TikTok</strong> and viewed (too many) ads and accidentally clicked on one for Temu</li>
-<li class="fragment">Searched for MMU busniess school to find the address (<em>does this mean I want to be a student at MMU?</em>)</li>
-<li class="fragment">Used BBC Sounds to listen to a podcast in the car</li>
-<li class="fragment">Used the NCP car park and paid on their app</li>
-<li class="fragment">Bought a coffee at Caffe Nero and collected the loyalty points using their app</li>
-<li class="fragment">Checked the weather in the Lake District via Google</li>
+<li class="fragment">Time/date</li>
+<li class="fragment">Location</li>
+<li class="fragment">Order
+<ul>
+<li class="fragment">Addons</li>
+</ul></li>
+<li class="fragment">Payment method</li>
+<li class="fragment">Vouchers used</li>
+<li class="fragment">Click-and-collect or pay at counter</li>
+<li class="fragment">Sit in or takeaway</li>
+<li class="fragment">Cart abandonment</li>
 </ul>
 </div>
+</div>
+</section>
+<section class="slide level2">
 
-<aside><div>
-<p>This was written a couple of weeks ago based on what I thought that I would be doing this morning</p>
-</div></aside></section>
-<section id="other-ideas" class="slide level2 scrollable">
-<h2>Other ideas</h2>
+<div>
 <ul>
-<li class="fragment">Buying a train ticket though an app</li>
-<li class="fragment">Searching for a journey on Bee Network</li>
-<li class="fragment">Looking at your own company’s website</li>
-<li class="fragment">Adding items to your Asos cart but not checking out</li>
-<li class="fragment">Logging a run on Strava</li>
-<li class="fragment">Having your steps connected to the MMU Moves App</li>
-<li class="fragment">Watching something on Netflix</li>
+<li class="fragment">Vouchers after being absent</li>
+<li class="fragment">More prominent up sell if I never get add-ons</li>
+<li class="fragment">Push notification if there is a quieter shop nearby</li>
 </ul>
+</div>
 </section></section>
 <section>
 <section id="exploratory-data-analysis" class="title-slide slide level1 center">
@@ -283,22 +291,12 @@ Seb Bate
 <section id="i-think-i-have-seen-something-like-this-before" class="slide level2 scrollable">
 <h2>I think I have seen something like this before?</h2>
 <p>You may have seen Anscombe’s Quartet yesterday</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/AQ.png"></p>
-<figcaption>Anscombe’s Quartet <span class="citation" data-cites="anscombe1973">(<a href="#/references" role="doc-biblioref" onclick="">Anscombe, 1973</a>)</span> image from Wiki <span class="citation" data-cites="AnscombeWiki">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025</a>)</span></figcaption>
-</figure>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</section></section>
+
+<img data-src="img/AQ.png" class="r-stretch quarto-figure-center"><p class="caption">Anscombe’s Quartet <span class="citation" data-cites="anscombe1973">(<a href="#/references" role="doc-biblioref" onclick="">Anscombe, 1973</a>)</span> image from Wiki <span class="citation" data-cites="AnscombeWiki">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="simpsons-paradox" class="title-slide slide level1 center">
 <h1>Simpson’s Paradox</h1>
@@ -307,7 +305,8 @@ Seb Bate
 <section id="what-do-we-notice-here" class="slide level2">
 <h2>What do we notice here?</h2>
 
-<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>These are dataset 2 and 3 from earlier</p>
+</section>
 <section id="but-what-happens-if-we-now-add-labels-to-the-data" class="slide level2">
 <h2>But what happens if we now add labels to the data?</h2>
 <p>Dataset 2</p>
@@ -317,16 +316,16 @@ Seb Bate
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          x        y      label
-1  58.45976 14.14866      Gen Z
-2  35.40474 31.93916      Gen Z
-3  59.31099 10.57214      Gen Z
-4  37.08825 60.85723 Millennial
-5  55.74124 46.65358 Millennial
-6  67.30258 64.41346      Gen X
-7  64.09100 68.65099      Gen X
-8  37.54370 32.88402      Gen Z
-9  31.39965 39.26526      Gen Z
-10 64.59632 65.95251      Gen X</code></pre>
+1  20.93200 51.64624      Gen Z
+2  52.42152 47.86701 Millennial
+3  53.17861 98.60386     Boomer
+4  86.85371 65.54332     Boomer
+5  25.95260 73.03318 Millennial
+6  59.01414 93.57487     Boomer
+7  72.46241 27.62426 Millennial
+8  46.38607 51.00216 Millennial
+9  57.11245 15.32179      Gen Z
+10 58.94317 11.61288      Gen Z</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Gen A"      "Gen Z"      "Millennial" "Gen X"      "Boomer"    </code></pre>
@@ -339,11 +338,33 @@ Seb Bate
 <img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section class="slide level2">
 
-<p>and similarly for dataset 3</p>
 
 <img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section class="slide level2">
 
+<p>and similarly for dataset 3</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">and similarly for dataset 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">::: {.cell} ::: {.cell-output-display} <img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"> ::: :::</td>
+</tr>
+</tbody>
+</table>
 <div class="columns">
 <div class="column" style="width:40%;">
 <p><img data-src="img/Edward_H._Simpson.jpg"></p>
@@ -360,6 +381,11 @@ Seb Bate
 
 
 <img data-src="img/Simpsons_paradox_-_animation.gif" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="pacesvwiki2017">Pace&nbsp;svwiki (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section></section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank you</h1>
+<p>Any questions?</p>
+</section>
+
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 
