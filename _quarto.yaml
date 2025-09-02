@@ -1,3 +1,14 @@
 project:
   type: website
   output-dir: docs
+
+format:
+  revealjs:
+    incremental: true
+    theme: dracula
+
+# Automatically create a .nojekyll file in the docs folder
+execute:
+  freeze: true
+  require-files:
+    - docs/.nojekyll
