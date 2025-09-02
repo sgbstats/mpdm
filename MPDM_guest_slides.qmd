@@ -5,6 +5,7 @@ format: revealjs
 editor: visual
 bibliography: references.bib
 csl: csl/harvard-cite-them-right.csl
+theme: dracula
 ---
 
 ## Who am I?
