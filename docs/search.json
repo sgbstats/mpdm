@@ -1,72 +1,65 @@
 [
   {
-    "objectID": "MPDM_guest_slides.html#who-am-i",
-    "href": "MPDM_guest_slides.html#who-am-i",
+    "objectID": "index.html#who-am-i",
+    "href": "index.html#who-am-i",
     "title": "MPDM Guest Lecture",
     "section": "Who am I?",
     "text": "Who am I?\n\nMedical Statistician at Manchester hospitals\nData visualisation hobbyist"
   },
   {
-    "objectID": "MPDM_guest_slides.html#what-are-we-doing-today",
-    "href": "MPDM_guest_slides.html#what-are-we-doing-today",
+    "objectID": "index.html#what-are-we-doing-today",
+    "href": "index.html#what-are-we-doing-today",
     "title": "MPDM Guest Lecture",
     "section": "What are we doing today?",
     "text": "What are we doing today?\n\nWarm up activity\nExploratory data analysis\nSimpson’s paradox"
   },
   {
-    "objectID": "MPDM_guest_slides.html#warm-up-activity",
-    "href": "MPDM_guest_slides.html#warm-up-activity",
+    "objectID": "index.html#warm-up-activity",
+    "href": "index.html#warm-up-activity",
     "title": "MPDM Guest Lecture",
     "section": "Warm up activity",
     "text": "Warm up activity\n\nThis morning, how many times and where have you handed over data that could be used by a marketer?\n\nThink about all times you have hit a digital touchpoint?\nSome bits of data are better quality than others\nFeel free to work quietly in small groups"
   },
   {
-    "objectID": "MPDM_guest_slides.html#my-day-so-far",
-    "href": "MPDM_guest_slides.html#my-day-so-far",
+    "objectID": "index.html#my-day-so-far",
+    "href": "index.html#my-day-so-far",
     "title": "MPDM Guest Lecture",
     "section": "My day so far",
     "text": "My day so far\n\n\nWoke up and scrolled on TikTok and viewed (too many) ads and accidentally clicked on one for Temu\nSearched for MMU busniess school to find the address (does this mean I want to be a student at MMU?)\nUsed BBC Sounds to listen to a podcast in the car\nUsed the NCP car park and paid on their app\nBought a coffee at Caffe Nero and collected the loyalty points using their app\nChecked the weather in the Lake District via Google\n\n\n\n\nThis was written a couple of weeks ago based on what I thought that I would be doing this morning"
   },
   {
-    "objectID": "MPDM_guest_slides.html#other-ideas",
-    "href": "MPDM_guest_slides.html#other-ideas",
+    "objectID": "index.html#other-ideas",
+    "href": "index.html#other-ideas",
     "title": "MPDM Guest Lecture",
     "section": "Other ideas",
     "text": "Other ideas\n\nBuying a train ticket though an app\nSearching for a journey on Bee Network\nLooking at your own company’s website\nAdding items to your Asos cart but not checking out\nLogging a run on Strava\nHaving your steps connected to the MMU Moves App\nWatching something on Netflix"
   },
   {
-    "objectID": "MPDM_guest_slides.html#what-is-eda",
-    "href": "MPDM_guest_slides.html#what-is-eda",
+    "objectID": "index.html#what-is-eda",
+    "href": "index.html#what-is-eda",
     "title": "MPDM Guest Lecture",
     "section": "What is EDA?",
     "text": "What is EDA?\n\nWhen you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic."
   },
   {
-    "objectID": "MPDM_guest_slides.html#what-to-look-for",
-    "href": "MPDM_guest_slides.html#what-to-look-for",
+    "objectID": "index.html#what-to-look-for",
+    "href": "index.html#what-to-look-for",
     "title": "MPDM Guest Lecture",
     "section": "What to look for",
     "text": "What to look for\n\n\nNumber of obervations\nData types (continuous, categorical, ordinal, time series)\nMean/Mode/Median\nDistribution\nTwo variables plotted against each other\nAny between variable associations"
   },
   {
-    "objectID": "MPDM_guest_slides.html#what-plot-to-use",
-    "href": "MPDM_guest_slides.html#what-plot-to-use",
+    "objectID": "index.html#what-plot-to-use",
+    "href": "index.html#what-plot-to-use",
     "title": "MPDM Guest Lecture",
     "section": "What plot to use",
     "text": "What plot to use\n\nGraph flowchart (Yau, 2009)"
   },
   {
-    "objectID": "MPDM_guest_slides.html#activity",
-    "href": "MPDM_guest_slides.html#activity",
+    "objectID": "index.html#activity",
+    "href": "index.html#activity",
     "title": "MPDM Guest Lecture",
     "section": "Activity",
-    "text": "Activity\n\nNavigate to https://github.com/sgbstats/mpdm/tree/main/data - On this page are 13 datasets - Either on your own or in a small group download one of them and explore it"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "",
-    "section": "",
-    "text": "License Notice\nThis work is licensed under a Creative Commons Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0).\nYou are free to:\nShare — copy and redistribute the material in any medium or format.\nAdapt — remix, transform, and build upon the material.\nUnder the following terms:\nAttribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.\nNonCommercial — You may not use the material for commercial purposes.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nTo view a copy of this license, visit: https://creativecommons.org/licenses/by-nc/4.0/\nPortions of the underlying data are licensed under the MIT License © YEAR: 2022 COPYRIGHT HOLDER: datasauRus authors. Used in accordance with that license."
+    "text": "Activity\n\nNavigate to https://github.com/sgbstats/mpdm/tree/main/data or go to https://github.com/sgbstats/mpdm and click on the data folder\n- On this page are 13 datasets - Either on your own or in a small group download one of them and explore it"
   }
 ]

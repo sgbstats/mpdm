@@ -9,8 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
-  <meta name="author" content="Seb Bate">
-  <title>MPDM Guest Lecture</title>
+  <title>license</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,26 +27,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-e9506f4cf0740638825fabafd1e71958.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -145,116 +125,22 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">MPDM Guest Lecture</h1>
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Seb Bate 
-</div>
-</div>
-</div>
+<section class="slide level2">
 
-</section>
-<section id="who-am-i" class="slide level2">
-<h2>Who am I?</h2>
-<ul>
-<li class="fragment">Medical Statistician at Manchester hospitals</li>
-<li class="fragment">Data visualisation hobbyist</li>
-</ul>
-</section>
-<section id="what-are-we-doing-today" class="slide level2">
-<h2>What are we doing today?</h2>
-<ol type="1">
-<li class="fragment">Warm up activity</li>
-<li class="fragment">Exploratory data analysis</li>
-<li class="fragment">Simpson’s paradox</li>
-</ol>
-</section>
-<section id="warm-up-activity" class="slide level2">
-<h2>Warm up activity</h2>
-<div>
-<p>This morning, how many times and where have you handed over data that could be used by a marketer?</p>
-<ul>
-<li class="fragment"><p>Think about all times you have hit a digital touchpoint?</p></li>
-<li class="fragment"><p>Some bits of data are better quality than others</p></li>
-<li class="fragment"><p>Feel free to work quietly in small groups</p></li>
-</ul>
-</div>
-</section>
-<section id="my-day-so-far" class="slide level2 smaller">
-<h2>My day so far</h2>
-<div>
-<ul>
-<li class="fragment">Woke up and scrolled on <strong>TikTok</strong> and viewed (too many) ads and accidentally clicked on one for Temu</li>
-<li class="fragment">Searched for MMU busniess school to find the address (<em>does this mean I want to be a student at MMU?</em>)</li>
-<li class="fragment">Used BBC Sounds to listen to a podcast in the car</li>
-<li class="fragment">Used the NCP car park and paid on their app</li>
-<li class="fragment">Bought a coffee at Caffe Nero and collected the loyalty points using their app</li>
-<li class="fragment">Checked the weather in the Lake District via Google</li>
-</ul>
-</div>
-
-<aside><div>
-<p>This was written a couple of weeks ago based on what I thought that I would be doing this morning</p>
-</div></aside></section>
-<section id="other-ideas" class="slide level2 scrollable">
-<h2>Other ideas</h2>
-<ul>
-<li class="fragment">Buying a train ticket though an app</li>
-<li class="fragment">Searching for a journey on Bee Network</li>
-<li class="fragment">Looking at your own company’s website</li>
-<li class="fragment">Adding items to your Asos cart but not checking out</li>
-<li class="fragment">Logging a run on Strava</li>
-<li class="fragment">Having your steps connected to the MMU Moves App</li>
-<li class="fragment">Watching something on Netflix</li>
-</ul>
-</section>
-<section>
-<section id="exploratory-data-analysis" class="title-slide slide level1 center">
-<h1>Exploratory data analysis</h1>
-
-</section>
-<section id="what-is-eda" class="slide level2">
-<h2>What is EDA?</h2>
-<div>
-<p>When you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic.</p>
-</div>
-</section>
-<section id="what-to-look-for" class="slide level2">
-<h2>What to look for</h2>
-<div>
-<ul>
-<li class="fragment">Number of obervations</li>
-<li class="fragment">Data types (continuous, categorical, ordinal, time series)</li>
-<li class="fragment">Mean/Mode/Median</li>
-<li class="fragment">Distribution</li>
-<li class="fragment">Two variables plotted against each other</li>
-<li class="fragment">Any between variable associations</li>
-</ul>
-</div>
-</section>
-<section id="what-plot-to-use" class="slide level2">
-<h2>What plot to use</h2>
-
-<img data-src="img/choosechart.jpg" class="r-stretch quarto-figure-center"><p class="caption">Graph flowchart <span class="citation" data-cites="yau2009">(<a href="#/references" role="doc-biblioref" onclick="">Yau, 2009</a>)</span></p></section>
-<section id="activity" class="slide level2">
-<h2>Activity</h2>
-<div>
-<p>Navigate to <a href="https://github.com/sgbstats/mpdm/tree/main/data" class="uri">https://github.com/sgbstats/mpdm/tree/main/data</a> or go to <a href="https://github.com/sgbstats/mpdm" class="uri">https://github.com/sgbstats/mpdm</a> and click on the data folder</p>
-<p>- On this page are 13 datasets - Either on your own or in a small group download one of them and explore it</p>
-</div>
-</section></section>
-<section id="references" class="title-slide slide level1 smaller scrollable">
-<h1>References</h1>
+<p>License Notice</p>
+<p>This work is licensed under a Creative Commons Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0).</p>
+<p>You are free to:</p>
+<p>Share — copy and redistribute the material in any medium or format.</p>
+<p>Adapt — remix, transform, and build upon the material.</p>
+<p>Under the following terms:</p>
+<p>Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.</p>
+<p>NonCommercial — You may not use the material for commercial purposes.</p>
+<p>No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p>
+<p>To view a copy of this license, visit: https://creativecommons.org/licenses/by-nc/4.0/</p>
+<p>Portions of the underlying data are licensed under the MIT License © YEAR: 2022 COPYRIGHT HOLDER: datasauRus authors. Used in accordance with that license.</p>
 
 
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-yau2009" class="csl-entry" role="listitem">
-Yau, N. (2009) <em>Flow Chart Shows You What Chart to Use</em>. Available at: <a href="https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/">https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/</a> (Accessed: September 2, 2025).
-</div>
-</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

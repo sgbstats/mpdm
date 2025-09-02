@@ -1,11 +1,14 @@
 ---
 title: "MPDM Guest Lecture"
 author: "Seb Bate"
-format: revealjs
+format: 
+  revealjs:
+    incremental: true
+    self-contained: false
 editor: visual
+output-file: index.html
 bibliography: references.bib
 csl: csl/harvard-cite-them-right.csl
-theme: dracula
 ---
 
 ## Who am I?
@@ -82,7 +85,9 @@ When you are given a dataset to work with it can often be quite daunting. The mo
 ## Activity
 
 ::: incremental
-Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> - On this page are 13 datasets - Either on your own or in a small group download one of them and explore it
+Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://github.com/sgbstats/mpdm> and click on the data folder
+
+\- On this page are 13 datasets - Either on your own or in a small group download one of them and explore it
 :::
 
 # References
