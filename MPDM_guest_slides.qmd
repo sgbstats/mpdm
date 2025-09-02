@@ -1,0 +1,83 @@
+---
+title: "MPDM Guest Lecture"
+author: "Seb Bate"
+format: 
+  revealjs:
+    incremental: true
+editor: visual
+bibliography: references.bib
+csl: csl/harvard-cite-them-right.csl
+---
+
+## Who am I?
+
+-   Medical Statistician at Manchester hospitals
+-   Data visualisation hobbyist
+
+## What are we doing today?
+
+1.  Warm up activity
+2.  Exploratory data analysis
+3.  Simpson's paradox
+
+## Warm up activity
+
+::: incremental
+This morning, how many times and where have you handed over data that could be used by a marketer?
+
+-   Think about all times you have hit a digital touchpoint?
+
+-   Some bits of data are better quality than others
+
+-   Feel free to work quietly in small groups
+:::
+
+## My day so far {.smaller}
+
+::: incremental
+-   Woke up and scrolled on **TikTok** and viewed (too many) ads and accidentally clicked on one for Temu
+-   Searched for MMU busniess school to find the address (*does this mean I want to be a student at MMU?*)
+-   Used BBC Sounds to listen to a podcast in the car
+-   Used the NCP car park and paid on their app
+-   Bought a coffee at Caffe Nero and collected the loyalty points using their app
+-   Checked the weather in the Lake District via Google
+:::
+
+::: aside
+This was written a couple of weeks ago based on what I thought that I would be doing this morning
+:::
+
+## Other ideas {.scrollable}
+
+-   Buying a train ticket though an app
+-   Searching for a journey on Bee Network
+-   Looking at your own company's website
+-   Adding items to your Asos cart but not checking out
+-   Logging a run on Strava
+-   Having your steps connected to the MMU Moves App
+-   Watching something on Netflix
+
+# Exploratory data analysis
+
+## What is EDA?
+
+::: incremental
+When you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic.
+:::
+
+## What to look for
+
+::: incremental
+-   Data types (continuous, categorical, ordinal, time series)
+-   Mean/Mode/Median
+-   Distribution
+-   Two variables plotted against each other
+-   Any between variable associations
+:::
+
+## What plot to use
+
+![Graph flowchart [@yau2009]](img/choosechart.jpg)
+
+
+# References
