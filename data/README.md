@@ -11,4 +11,4 @@
 
 ## Picking a graph
 
-![Graph flowchart [@yau2009]](img/choosechart.jpg)
+![Graph flowchart [@yau2009]](../img/choosechart.jpg)

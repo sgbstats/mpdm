@@ -157,6 +157,11 @@ Seb Bate
 </div>
 
 </section>
+<section>
+<section id="intro" class="title-slide slide level1 center">
+<h1>Intro</h1>
+
+</section>
 <section id="who-am-i" class="slide level2">
 <h2>Who am I?</h2>
 <ul>
@@ -210,7 +215,7 @@ Seb Bate
 <li class="fragment">Having your steps connected to the MMU Moves App</li>
 <li class="fragment">Watching something on Netflix</li>
 </ul>
-</section>
+</section></section>
 <section>
 <section id="exploratory-data-analysis" class="title-slide slide level1 center">
 <h1>Exploratory data analysis</h1>
@@ -243,14 +248,138 @@ Seb Bate
 <h2>Activity</h2>
 <div>
 <p>Navigate to <a href="https://github.com/sgbstats/mpdm/tree/main/data" class="uri">https://github.com/sgbstats/mpdm/tree/main/data</a> or go to <a href="https://github.com/sgbstats/mpdm" class="uri">https://github.com/sgbstats/mpdm</a> and click on the data folder</p>
-<p>- On this page are 13 datasets - Either on your own or in a small group download one of them and explore it</p>
+<ul>
+<li class="fragment">On this page are 13 datasets</li>
+<li class="fragment">Either on your own or in a small group download one of them and explore it</li>
+<li class="fragment">In the data folder is the text and images from the previous couple of slides</li>
+<li class="fragment">If you have finished one dataset pick another and repeat</li>
+</ul>
+</div>
+</section>
+<section id="what-have-we-found" class="slide level2">
+<h2>What have we found?</h2>
+<div class="incrementatal">
+<ul>
+<li class="fragment">Mean X: 54.26</li>
+<li class="fragment">Mean Y: 47.83</li>
+<li class="fragment">SD X: 16.76</li>
+<li class="fragment">SD Y: 26.93</li>
+<li class="fragment">Correlation: -0.06</li>
+</ul>
+</div>
+</section>
+<section id="plotted" class="slide level2">
+<h2>Plotted</h2>
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="i-think-i-have-seen-something-like-this-before" class="slide level2 scrollable">
+<h2>I think I have seen something like this before?</h2>
+<p>You may have seen Anscombe’s Quartet yesterday</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/AQ.png"></p>
+<figcaption>Anscombe’s Quartet <span class="citation" data-cites="anscombe1973">(<a href="#/references" role="doc-biblioref" onclick="">Anscombe, 1973</a>)</span> image from Wiki <span class="citation" data-cites="AnscombeWiki">(<a href="#/references" role="doc-biblioref" onclick="">Wikipedia contributors, 2025</a>)</span></figcaption>
+</figure>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+</figure>
+</div>
+</div>
 </div>
 </section></section>
+<section>
+<section id="simpsons-paradox" class="title-slide slide level1 center">
+<h1>Simpson’s Paradox</h1>
+
+<img data-src="img/Homer_Simpson_2006.png" style="width:50.0%" class="r-stretch"></section>
+<section id="what-do-we-notice-here" class="slide level2">
+<h2>What do we notice here?</h2>
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<section id="but-what-happens-if-we-now-add-labels-to-the-data" class="slide level2">
+<h2>But what happens if we now add labels to the data?</h2>
+<p>Dataset 2</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Our dataset</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          x        y      label
+1  58.45976 14.14866      Gen Z
+2  35.40474 31.93916      Gen Z
+3  59.31099 10.57214      Gen Z
+4  37.08825 60.85723 Millennial
+5  55.74124 46.65358 Millennial
+6  67.30258 64.41346      Gen X
+7  64.09100 68.65099      Gen X
+8  37.54370 32.88402      Gen Z
+9  31.39965 39.26526      Gen Z
+10 64.59632 65.95251      Gen X</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Gen A"      "Gen Z"      "Millennial" "Gen X"      "Boomer"    </code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<p>and similarly for dataset 3</p>
+
+<img data-src="MPDM_guest_slides_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img/Edward_H._Simpson.jpg"></p>
+</div><div class="column" style="width:60%;">
+<div>
+<ul>
+<li>This is what we call Simpson’s Paradox <span class="citation" data-cites="simpson1951 kievit2013">(<a href="#/references" role="doc-biblioref" onclick="">Simpson, 1951</a>; <a href="#/references" role="doc-biblioref" onclick="">Kievit <em>et al.</em>, 2013</a>)</span>.</li>
+<li>Sometimes the direction of the correlation changes when we look at each subgroup</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="img/Simpsons_paradox_-_animation.gif" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="pacesvwiki2017">Pace&nbsp;svwiki (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 
 
 <div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-anscombe1973" class="csl-entry" role="listitem">
+Anscombe, F.J. (1973) <span>“Graphs in statistical analysis,”</span> <em>The American Statistician</em>, 27(1), pp. 17–21. Available at: <a href="https://doi.org/10.2307/2682899">https://doi.org/10.2307/2682899</a>.
+</div>
+<div id="ref-kievit2013" class="csl-entry" role="listitem">
+Kievit, R. <em>et al.</em> (2013) <span>“Simpson’s paradox in psychological science: A practical guide,”</span> <em>Frontiers in Psychology</em>, 4. Available at: <a href="https://doi.org/10.3389/fpsyg.2013.00513">https://doi.org/10.3389/fpsyg.2013.00513</a>.
+</div>
+<div id="ref-pacesvwiki2017" class="csl-entry" role="listitem">
+Pace&nbsp;svwiki (2017) <span>“Svenska: En visualisering av simpsons paradox där datapunkterna antingen analyseras tillsammans eller gruppvis. När datapunkterna analyseras tillsammans är sambandet negativt och visar en avtagande trend. Men när datapunkterna analyseras gruppvis är sambandet i stället positivt och visar en ökande trend.”</span> Available at: <a href="https://commons.wikimedia.org/wiki/File:Simpsons_paradox_-_animation.gif">https://commons.wikimedia.org/wiki/File:Simpsons_paradox_-_animation.gif</a> (Accessed: September 2, 2025).
+</div>
+<div id="ref-simpson1951" class="csl-entry" role="listitem">
+Simpson, E.H. (1951) <span>“The interpretation of interaction in contingency tables,”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em>, 13(2), pp. 238–241. Available at: <a href="https://doi.org/10.1111/j.2517-6161.1951.tb00088.x">https://doi.org/10.1111/j.2517-6161.1951.tb00088.x</a>.
+</div>
+<div id="ref-AnscombeWiki" class="csl-entry" role="listitem">
+Wikipedia contributors (2025) <em>Anscombe’s quartet</em>. <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet" class="uri">https://en.wikipedia.org/wiki/Anscombe%27s_quartet</a>.
+</div>
 <div id="ref-yau2009" class="csl-entry" role="listitem">
 Yau, N. (2009) <em>Flow Chart Shows You What Chart to Use</em>. Available at: <a href="https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/">https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/</a> (Accessed: September 2, 2025).
 </div>
@@ -471,6 +600,82 @@ Yau, N. (2009) <em>Flow Chart Shows You What Chart to Use</em>. Available at: <a
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

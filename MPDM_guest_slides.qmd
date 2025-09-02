@@ -11,6 +11,8 @@ bibliography: references.bib
 csl: csl/harvard-cite-them-right.csl
 ---
 
+# Intro
+
 ## Who am I?
 
 -   Medical Statistician at Manchester hospitals
@@ -87,7 +89,164 @@ When you are given a dataset to work with it can often be quite daunting. The mo
 ::: incremental
 Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://github.com/sgbstats/mpdm> and click on the data folder
 
-\- On this page are 13 datasets - Either on your own or in a small group download one of them and explore it
+-   On this page are 13 datasets
+-   Either on your own or in a small group download one of them and explore it
+-   In the data folder is the text and images from the previous couple of slides
+-   If you have finished one dataset pick another and repeat
 :::
+
+## What have we found?
+
+::: incrementatal
+-   Mean X: 54.26
+-   Mean Y: 47.83
+-   SD X: 16.76
+-   SD Y: 26.93
+-   Correlation: -0.06
+:::
+
+## Plotted
+
+```{R, echo=FALSE, message=FALSE}
+library(datasauRus)
+library(tidyverse)
+
+dataset_id=c("dino", "slant_down", "slant_up", "h_lines", "star", "away", "v_lines", "high_lines", "wide_lines", "bullseye","x_shape", "circle", "dots")
+
+datasaurus_dozen$dataset <- factor(datasaurus_dozen$dataset, levels = dataset_id)
+
+datasaurus_dozen %>% 
+  filter(dataset %in% dataset_id[1:4]) %>% 
+  ggplot(aes(x = x, y = y, colour = dataset)) +
+  geom_point() +
+  theme_void() +
+  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  facet_wrap(~dataset, ncol = 2)
+```
+
+------------------------------------------------------------------------
+
+```{R, echo=FALSE, message=FALSE}
+datasaurus_dozen %>% 
+  filter(dataset %in% dataset_id[5:8]) %>% 
+  ggplot(aes(x = x, y = y, colour = dataset)) +
+  geom_point() +
+  theme_void() +
+  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  facet_wrap(~dataset, ncol = 2)
+```
+
+------------------------------------------------------------------------
+
+```{R, echo=FALSE, message=FALSE}
+datasaurus_dozen %>% 
+  filter(dataset %in% dataset_id[9:13]) %>% 
+  ggplot(aes(x = x, y = y, colour = dataset)) +
+  geom_point() +
+  theme_void() +
+  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  facet_wrap(~dataset, ncol = 3)
+```
+
+## I think I have seen something like this before? {.scrollable}
+
+You may have seen Anscombe's Quartet yesterday
+
+![Anscombe's Quartet [@anscombe1973] image from Wiki [@AnscombeWiki]](img/AQ.png)
+
+```{r, message=FALSE,echo=FALSE}
+
+datasaurus_dozen %>% 
+  filter(dataset %in% dataset_id[1:4]) %>% 
+  ggplot(aes(x = x, y = y, colour = dataset)) +
+  geom_point() +
+  geom_smooth(method = "lm", se=F)+
+  theme_void() +
+  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  facet_wrap(~dataset, ncol = 2)
+```
+
+# Simpson's Paradox
+
+![](img/Homer_Simpson_2006.png){width="50%"}
+
+## What do we notice here?
+
+```{r, message=FALSE,echo=FALSE}
+
+datasaurus_dozen %>% 
+  filter(dataset %in% dataset_id[2:3]) %>% 
+  ggplot(aes(x = x, y = y, colour = dataset)) +
+  geom_point() +
+  geom_smooth(method = "lm", se=F)+
+  theme_bw() +
+  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  facet_wrap(~dataset, ncol = 2)
+```
+
+## But what happens if we now add labels to the data?
+
+Dataset 2
+
+```{r, message=FALSE,echo=FALSE}
+dataset2a=read.csv("data/activity2/dataset2a.csv")
+dataset2a$label=factor(dataset2a$label, levels=c("Gen A", "Gen Z", "Millennial", "Gen X", "Boomer"))
+cat("Our dataset\n")
+dataset2a %>% 
+  sample_n(10)
+
+levels(dataset2a$label)
+
+
+```
+
+------------------------------------------------------------------------
+
+```{r, message=FALSE,echo=FALSE}
+dataset2a %>% 
+  ggplot(aes(x = x, y = y, colour = label)) +
+  geom_point() +
+  geom_smooth(method = "lm", se=F)+
+  theme_bw()+
+  labs(colour="Generation")
+
+```
+
+------------------------------------------------------------------------
+
+and similarly for dataset 3
+
+```{r, message=FALSE,echo=FALSE}
+dataset3a=read.csv("data/activity2/dataset3a.csv")
+dataset3a$label=factor(dataset3a$label, levels=c("Gen A", "Gen Z", "Millennial", "Gen X", "Boomer"))
+
+dataset3a %>% 
+  ggplot(aes(x = x, y = y, colour = label)) +
+  geom_point() +
+  geom_smooth(method = "lm", se=F)+
+  theme_bw()+
+  labs(colour="Generation")
+
+
+```
+
+------------------------------------------------------------------------
+
+:::::: columns
+::: {.column width="40%"}
+![](img/Edward_H._Simpson.jpg)
+:::
+
+:::: {.column width="60%"}
+::: nonincremental
+-   This is what we call Simpson's Paradox [@simpson1951; @kievit2013].
+-   Sometimes the direction of the correlation changes when we look at each subgroup
+:::
+::::
+::::::
+
+------------------------------------------------------------------------
+
+![@pacesvwiki2017](img/Simpsons_paradox_-_animation.gif)
 
 # References
