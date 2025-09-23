@@ -18,7 +18,7 @@
     "href": "index.html#warm-up-activity",
     "title": "MPDM Guest Lecture",
     "section": "Warm up activity",
-    "text": "Warm up activity\n\n\nPick a digital touchpoint that you have hit in the last 24h\nNow think about the hundreds, thousands, millions of hits that your touchpoint has received\nWhat data has been collected?\nWhat data can be analysed and how would you analyse it?\nWhat actions could you take as a marketeer?\nSome bits of data are better quality than others\nFeel free to work quietly in small groups"
+    "text": "Warm up activity\n\nPick a digital touchpoint that you have hit in the last 24h\nNow think about the hundreds, thousands, millions of hits that your touchpoint has received\nWhat data has been collected?\nWhat data can be analysed and how would you analyse it?\nWhat actions could you take as a marketeer?\nSome bits of data are better quality than others\nFeel free to work quietly in small groups"
   },
   {
     "objectID": "index.html#my-day-so-far",
@@ -39,14 +39,14 @@
     "href": "index.html#what-is-eda",
     "title": "MPDM Guest Lecture",
     "section": "What is EDA?",
-    "text": "What is EDA?\n\nWhen you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic."
+    "text": "What is EDA?\nWhen you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic."
   },
   {
     "objectID": "index.html#what-to-look-for",
     "href": "index.html#what-to-look-for",
     "title": "MPDM Guest Lecture",
     "section": "What to look for",
-    "text": "What to look for\n\n\nNumber of obervations\nData types (continuous, categorical, ordinal, time series)\nMean/Mode/Median\nDistribution\nTwo variables plotted against each other\nAny between variable associations"
+    "text": "What to look for\n\nNumber of observations (number of rows)\nData types (continuous, categorical, ordinal, time series)\nMean/Mode/Median\nDistribution\nTwo variables plotted against each other"
   },
   {
     "objectID": "index.html#what-plot-to-use",
@@ -60,14 +60,14 @@
     "href": "index.html#activity",
     "title": "MPDM Guest Lecture",
     "section": "Activity",
-    "text": "Activity\n\nNavigate to https://github.com/sgbstats/mpdm/tree/main/data or go to https://github.com/sgbstats/mpdm and click on the data folder\n\nOn this page are 13 datasets\nEither on your own or in a small group download one of them and explore it\nIn the data folder is the text and images from the previous couple of slides\nIf you have finished one dataset pick another and repeat\nData courtesy of Matejka and Fitzmaurice (2017) and Gillespie et al. (no date)"
+    "text": "Activity\nGet your laptops out, navigate to https://github.com/sgbstats/mpdm/tree/main/data or go to https://github.com/sgbstats/mpdm and click on the data folder\n\nOn this page are 13 datasets\nEither on your own or in a small group download one of them and explore it\nIn the data folder is the text and images from the previous couple of slides\nIf you have finished one dataset pick another and repeat\nData courtesy of Matejka and Fitzmaurice (2017) and Gillespie et al. (no date)"
   },
   {
     "objectID": "index.html#what-have-we-found",
     "href": "index.html#what-have-we-found",
     "title": "MPDM Guest Lecture",
     "section": "What have we found?",
-    "text": "What have we found?\n\n\nMean X: 54.26\nMean Y: 47.83\nSD X: 16.76\nSD Y: 26.93\nCorrelation: -0.06"
+    "text": "What have we found?\n\n\nN: 142\nMean X: 54.26\nMean Y: 47.83\nSD X: 16.76\nSD Y: 26.93\nCorrelation: -0.06"
   },
   {
     "objectID": "index.html#plotted",
@@ -109,7 +109,7 @@
     "href": "index.html#but-what-happens-if-we-now-add-labels-to-the-data",
     "title": "MPDM Guest Lecture",
     "section": "But what happens if we now add labels to the data?",
-    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n          x        y      label\n1  37.08825 60.85723 Millennial\n2  86.85371 65.54332     Boomer\n3  59.31099 10.57214      Gen Z\n4  58.45976 14.14866      Gen Z\n5  64.09100 68.65099      Gen X\n6  82.30416 46.99090      Gen X\n7  40.12373 30.07316      Gen Z\n8  55.04555 45.98627 Millennial\n9  61.73727 38.58484 Millennial\n10 53.17861 98.60386     Boomer\n\n\n[1] \"Gen A\"      \"Gen Z\"      \"Millennial\" \"Gen X\"      \"Boomer\""
+    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n          x        y      label\n1  69.91943 29.31109 Millennial\n2  50.71330 48.77229 Millennial\n3  20.93200 51.64624      Gen Z\n4  45.41264 53.87080 Millennial\n5  50.43386 18.53487      Gen Z\n6  77.44900 72.44731     Boomer\n7  50.22442 19.17097      Gen Z\n8  95.44349 36.18970      Gen X\n9  59.31506 12.35431      Gen Z\n10 78.87658 71.56253     Boomer\n\n\n[1] \"Gen A\"      \"Gen Z\"      \"Millennial\" \"Gen X\"      \"Boomer\""
   },
   {
     "objectID": "index.html#references",
@@ -130,6 +130,13 @@
     "href": "index.html#e.g.-buying-a-coffee-on-the-caffe-nero-app",
     "title": "MPDM Guest Lecture",
     "section": "E.g. Buying a coffee on the Caffe Nero app",
-    "text": "E.g. Buying a coffee on the Caffe Nero app\n\n\nTime/date\nLocation\nOrder\n\nAddons\n\nPayment method\nVouchers used\nClick-and-collect or pay at counter\nSit in or takeaway\nCart abandonment"
+    "text": "E.g. Buying a coffee on the Caffe Nero app\n\nTime/date\nLocation\nOrder\nAddons\nPayment method\nVouchers used\nClick-and-collect or pay at counter\nSit in or takeaway\nCart abandonment"
+  },
+  {
+    "objectID": "index.html#actions-that-can-be-taken",
+    "href": "index.html#actions-that-can-be-taken",
+    "title": "MPDM Guest Lecture",
+    "section": "Actions that can be taken?",
+    "text": "Actions that can be taken?\n\nGiving vouchers for lapsed customers\nMore prominent up sell if I never get add-ons\nPush notification if there is a quieter shop nearby"
   }
 ]

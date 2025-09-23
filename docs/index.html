@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.42">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6f6599830d51be977da3b6af758f8eff.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.23">
 
   <meta name="author" content="Seb Bate">
   <title>MPDM Guest Lecture</title>
@@ -48,7 +48,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-e9506f4cf0740638825fabafd1e71958.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-a1d3734469117662d4af4794742e8c15.css">
   <link rel="stylesheet" href="styles.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -180,7 +180,6 @@ Seb Bate
 </section>
 <section id="warm-up-activity" class="slide level2 smaller">
 <h2>Warm up activity</h2>
-<div>
 <ul>
 <li class="fragment"><p>Pick a digital touchpoint that you have hit in the last 24h</p></li>
 <li class="fragment"><p>Now think about the hundreds, thousands, millions of hits that your touchpoint has received</p></li>
@@ -190,35 +189,28 @@ Seb Bate
 <li class="fragment"><p>Some bits of data are better quality than others</p></li>
 <li class="fragment"><p>Feel free to work quietly in small groups</p></li>
 </ul>
-</div>
 </section>
-<section id="e.g.-buying-a-coffee-on-the-caffe-nero-app" class="slide level2">
+<section id="e.g.-buying-a-coffee-on-the-caffe-nero-app" class="slide level2 smaller">
 <h2>E.g. Buying a coffee on the Caffe Nero app</h2>
-<div>
 <ul>
 <li class="fragment">Time/date</li>
 <li class="fragment">Location</li>
-<li class="fragment">Order
-<ul>
+<li class="fragment">Order</li>
 <li class="fragment">Addons</li>
-</ul></li>
 <li class="fragment">Payment method</li>
 <li class="fragment">Vouchers used</li>
 <li class="fragment">Click-and-collect or pay at counter</li>
 <li class="fragment">Sit in or takeaway</li>
 <li class="fragment">Cart abandonment</li>
 </ul>
-</div>
 </section>
-<section class="slide level2">
-
-<div>
+<section id="actions-that-can-be-taken" class="slide level2">
+<h2>Actions that can be taken?</h2>
 <ul>
-<li class="fragment">Vouchers after being absent</li>
+<li class="fragment">Giving vouchers for lapsed customers</li>
 <li class="fragment">More prominent up sell if I never get add-ons</li>
 <li class="fragment">Push notification if there is a quieter shop nearby</li>
 </ul>
-</div>
 </section></section>
 <section>
 <section id="exploratory-data-analysis" class="title-slide slide level1 center">
@@ -227,31 +219,25 @@ Seb Bate
 </section>
 <section id="what-is-eda" class="slide level2">
 <h2>What is EDA?</h2>
-<div>
 <p>When you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic.</p>
-</div>
 </section>
 <section id="what-to-look-for" class="slide level2">
 <h2>What to look for</h2>
-<div>
 <ul>
-<li class="fragment">Number of obervations</li>
+<li class="fragment">Number of observations (number of rows)</li>
 <li class="fragment">Data types (continuous, categorical, ordinal, time series)</li>
 <li class="fragment">Mean/Mode/Median</li>
 <li class="fragment">Distribution</li>
 <li class="fragment">Two variables plotted against each other</li>
-<li class="fragment">Any between variable associations</li>
 </ul>
-</div>
 </section>
 <section id="what-plot-to-use" class="slide level2">
 <h2>What plot to use</h2>
 
 <img data-src="img/choosechart.jpg" class="r-stretch quarto-figure-center"><p class="caption">Graph flowchart <span class="citation" data-cites="yau2009">(<a href="#/references" role="doc-biblioref" onclick="">Yau, 2009</a>)</span></p></section>
-<section id="activity" class="slide level2">
+<section id="activity" class="slide level2 smaller">
 <h2>Activity</h2>
-<div>
-<p>Navigate to <a href="https://github.com/sgbstats/mpdm/tree/main/data" class="uri">https://github.com/sgbstats/mpdm/tree/main/data</a> or go to <a href="https://github.com/sgbstats/mpdm" class="uri">https://github.com/sgbstats/mpdm</a> and click on the data folder</p>
+<p>Get your laptops out, navigate to <a href="https://github.com/sgbstats/mpdm/tree/main/data" class="uri">https://github.com/sgbstats/mpdm/tree/main/data</a> or go to <a href="https://github.com/sgbstats/mpdm" class="uri">https://github.com/sgbstats/mpdm</a> and click on the data folder</p>
 <ul>
 <li class="fragment">On this page are 13 datasets</li>
 <li class="fragment">Either on your own or in a small group download one of them and explore it</li>
@@ -259,12 +245,26 @@ Seb Bate
 <li class="fragment">If you have finished one dataset pick another and repeat</li>
 <li class="fragment">Data courtesy of <span class="citation" data-cites="matejka2017">Matejka and Fitzmaurice (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span> and <span class="citation" data-cites="gillespie">Gillespie <em>et al.</em> (<a href="#/references" role="doc-biblioref" onclick="">no date</a>)</span></li>
 </ul>
-</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="images/clipboard-2717437058.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<ul>
+<li class="fragment">Number of observations (number of rows)</li>
+<li class="fragment">What is the Data type (continuous, categorical, ordinal, time series)</li>
+<li class="fragment">Mean/Mode/Median</li>
+<li class="fragment">Distribution of each variable</li>
+<li class="fragment">Two variables plotted against each other</li>
+</ul>
 </section>
 <section id="what-have-we-found" class="slide level2">
 <h2>What have we found?</h2>
 <div class="incrementatal">
 <ul>
+<li class="fragment">N: 142</li>
 <li class="fragment">Mean X: 54.26</li>
 <li class="fragment">Mean Y: 47.83</li>
 <li class="fragment">SD X: 16.76</li>
@@ -313,16 +313,16 @@ Seb Bate
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          x        y      label
-1  37.08825 60.85723 Millennial
-2  86.85371 65.54332     Boomer
-3  59.31099 10.57214      Gen Z
-4  58.45976 14.14866      Gen Z
-5  64.09100 68.65099      Gen X
-6  82.30416 46.99090      Gen X
-7  40.12373 30.07316      Gen Z
-8  55.04555 45.98627 Millennial
-9  61.73727 38.58484 Millennial
-10 53.17861 98.60386     Boomer</code></pre>
+1  69.91943 29.31109 Millennial
+2  50.71330 48.77229 Millennial
+3  20.93200 51.64624      Gen Z
+4  45.41264 53.87080 Millennial
+5  50.43386 18.53487      Gen Z
+6  77.44900 72.44731     Boomer
+7  50.22442 19.17097      Gen Z
+8  95.44349 36.18970      Gen X
+9  59.31506 12.35431      Gen Z
+10 78.87658 71.56253     Boomer</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Gen A"      "Gen Z"      "Millennial" "Gen X"      "Boomer"    </code></pre>
@@ -361,9 +361,13 @@ Seb Bate
 </section>
 <section class="slide level2">
 
-<p><img data-src="img/Simpsons_paradox_-_animation.gif"> # Thank you</p>
+
+<img data-src="img/Simpsons_paradox_-_animation.gif" class="r-stretch"></section></section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank you</h1>
 <p>Any questions?</p>
-</section></section>
+</section>
+
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 
@@ -581,7 +585,7 @@ Yau, N. (2009) <em>Flow Chart Shows You What Chart to Use</em>. Available at: <a
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -684,190 +688,173 @@ Yau, N. (2009) <em>Flow Chart Shows You What Chart to Use</em>. Available at: <a
     
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>

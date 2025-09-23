@@ -5,10 +5,11 @@ dataset_id=c("dino", "slant_down", "slant_up", "h_lines", "star", "away", "v_lin
 
 datasaurus_dozen$dataset <- factor(datasaurus_dozen$dataset, levels = c("dino", "slant_down", "slant_up", "h_lines", "star", "away", "v_lines", "high_lines", "wide_lines", "bullseye","x_shape", "circle", "dots"))
 
-for(i in 1:length(dataset)){
+for(i in 1:length(dataset_id)){
   cat(i)
   x=datasaurus_dozen %>% filter(dataset==dataset_id[i]) %>% 
-    select(-dataset) 
+    select(-dataset) %>% 
+    rename(age=x, spend=y)
   
     write.csv(x,file = paste0("data/dataset",i,".csv"), row.names = F)
 }

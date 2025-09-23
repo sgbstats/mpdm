@@ -42,13 +42,13 @@ csl: csl/harvard-cite-them-right.csl
 -   Feel free to work quietly in small groups
 :::
 
-## E.g. Buying a coffee on the Caffe Nero app
+## E.g. Buying a coffee on the Caffe Nero app {.smaller}
 
 ::: incremental
 -   Time/date
 -   Location
 -   Order
-    -   Addons
+-   Addons
 -   Payment method
 -   Vouchers used
 -   Click-and-collect or pay at counter
@@ -56,10 +56,10 @@ csl: csl/harvard-cite-them-right.csl
 -   Cart abandonment
 :::
 
-------------------------------------------------------------------------
+## Actions that can be taken?
 
 ::: incremental
--   Vouchers after being absent
+-   Giving vouchers for lapsed customers
 -   More prominent up sell if I never get add-ons
 -   Push notification if there is a quieter shop nearby
 :::
@@ -72,25 +72,24 @@ csl: csl/harvard-cite-them-right.csl
 When you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic.
 :::
 
-## What to look for
+## What to look for 
 
 ::: incremental
--   Number of obervations
+-   Number of observations (number of rows)
 -   Data types (continuous, categorical, ordinal, time series)
 -   Mean/Mode/Median
 -   Distribution
 -   Two variables plotted against each other
--   Any between variable associations
 :::
 
 ## What plot to use
 
 ![Graph flowchart [@yau2009]](img/choosechart.jpg)
 
-## Activity
+## Activity {.smaller}
 
 ::: incremental
-Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://github.com/sgbstats/mpdm> and click on the data folder
+Get your laptops out, navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://github.com/sgbstats/mpdm> and click on the data folder
 
 -   On this page are 13 datasets
 -   Either on your own or in a small group download one of them and explore it
@@ -99,9 +98,22 @@ Navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://
 -   Data courtesy of @matejka2017 and @gillespie
 :::
 
+------------------------------------------------------------------------
+
+![](images/clipboard-2717437058.png)
+
+-----
+
+-   Number of observations (number of rows)
+-   What is the Data type (continuous, categorical, ordinal, time series)
+-   Mean/Mode/Median
+-   Distribution of each variable
+-   Two variables plotted against each other
+
 ## What have we found?
 
 ::: incrementatal
+- N: 142
 -   Mean X: 54.26
 -   Mean Y: 47.83
 -   SD X: 16.76
@@ -283,7 +295,9 @@ dataset3a %>%
 
 ------------------------------------------------------------------------
 
-![](img/Simpsons_paradox_-_animation.gif) \# Thank you
+![](img/Simpsons_paradox_-_animation.gif) 
+
+# Thank you
 
 Any questions?
 
