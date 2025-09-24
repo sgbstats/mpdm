@@ -13,6 +13,8 @@ csl: csl/harvard-cite-them-right.csl
 
 # Intro
 
+![](images/clipboard-3440628929.png){width="40%"}
+
 ## Who am I?
 
 -   Medical Statistician at Manchester hospitals
@@ -20,11 +22,19 @@ csl: csl/harvard-cite-them-right.csl
 
 ## What are we doing today?
 
-1.  Warm up activity
-2.  Exploratory data analysis
-3.  Simpson's paradox
+1.  Menti
 
-## Warm up activity {.smaller}
+2.  Guess the data
+
+3.  Infographics
+
+4.  Simpson's paradox
+
+----
+
+![](images/clipboard-3143122643.jpeg)
+
+## Warm up activity
 
 ::: incremental
 -   Pick a digital touchpoint that you have hit in the last 24h
@@ -64,105 +74,45 @@ csl: csl/harvard-cite-them-right.csl
 -   Push notification if there is a quieter shop nearby
 :::
 
-# Exploratory data analysis
+# Guess the data
 
-## What is EDA?
-
-::: incremental
-When you are given a dataset to work with it can often be quite daunting. The most important thing is not to rush into anything or panic.
-:::
-
-## What to look for 
-
-::: incremental
--   Number of observations (number of rows)
--   Data types (continuous, categorical, ordinal, time series)
--   Mean/Mode/Median
--   Distribution
--   Two variables plotted against each other
-:::
-
-## What plot to use
-
-![Graph flowchart [@yau2009]](img/choosechart.jpg)
-
-## Activity {.smaller}
-
-::: incremental
-Get your laptops out, navigate to <https://github.com/sgbstats/mpdm/tree/main/data> or go to <https://github.com/sgbstats/mpdm> and click on the data folder
-
--   On this page are 13 datasets
--   Either on your own or in a small group download one of them and explore it
--   In the data folder is the text and images from the previous couple of slides
--   If you have finished one dataset pick another and repeat
--   Data courtesy of @matejka2017 and @gillespie
-:::
+![](images/clipboard-3491770170.png)
 
 ------------------------------------------------------------------------
 
-![](images/clipboard-2717437058.png)
+![](images/clipboard-3663099882.png)
 
------
+------------------------------------------------------------------------
 
--   Number of observations (number of rows)
--   What is the Data type (continuous, categorical, ordinal, time series)
--   Mean/Mode/Median
--   Distribution of each variable
--   Two variables plotted against each other
+## Some best practice
 
-## What have we found?
+![](images/clipboard-3077795585.png)
 
-::: incrementatal
-- N: 142
--   Mean X: 54.26
--   Mean Y: 47.83
--   SD X: 16.76
--   SD Y: 26.93
--   Correlation: -0.06
+------------------------------------------------------------------------
+
+![](images/clipboard-1061651444.png)
+
+# Infographics {.scrollable .smaller}
+
+::::: columns
+::: {.column width="50%"}
+-   Infographics are more editorialized plots (or combination of plots), often featuring more text and selective labels.
+    -   Some are more data driven than others
+-   Most people don’t like being told what to think and like to draw their own conclusion
+-   But this is where you are able to tell the story and at the end make a call to action
+-   Always be critical
 :::
 
-## Plotted
-
-```{R, echo=FALSE, message=FALSE}
-library(datasauRus)
-library(tidyverse)
-
-dataset_id=c("dino", "slant_down", "slant_up", "h_lines", "star", "away", "v_lines", "high_lines", "wide_lines", "bullseye","x_shape", "circle", "dots")
-
-datasaurus_dozen$dataset <- factor(datasaurus_dozen$dataset, levels = dataset_id)
-
-datasaurus_dozen %>% 
-  filter(dataset %in% dataset_id[1:4]) %>% 
-  ggplot(aes(x = x, y = y, colour = dataset)) +
-  geom_point() +
-  theme_bw() +
-  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
-  facet_wrap(~dataset, ncol = 2)
-```
+::: {.column width="50%"}
+![](images/clipboard-4278646531.png){width="60%"}
+:::
+:::::
 
 ------------------------------------------------------------------------
 
-```{R, echo=FALSE, message=FALSE}
-datasaurus_dozen %>% 
-  filter(dataset %in% dataset_id[5:8]) %>% 
-  ggplot(aes(x = x, y = y, colour = dataset)) +
-  geom_point() +
-  theme_bw() +
-  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
-  facet_wrap(~dataset, ncol = 2)
-```
+![](images/clipboard-4253895666.png)
 
-------------------------------------------------------------------------
-
-```{R, echo=FALSE, message=FALSE}
-datasaurus_dozen %>% 
-  filter(dataset %in% dataset_id[9:13]) %>% 
-  ggplot(aes(x = x, y = y, colour = dataset)) +
-  geom_point() +
-  theme_bw() +
-  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
-  facet_wrap(~dataset, ncol = 3)
-```
+# Some interesting data
 
 ## I think I have seen something like this before? {.scrollable}
 
@@ -172,17 +122,47 @@ You may have seen Anscombe's Quartet yesterday
 
 ------------------------------------------------------------------------
 
-```{r, message=FALSE,echo=FALSE}
+## But we can actually extend this idea to a much larger dataset {.scrollable}
+
+```{r, echo=FALSE, message=FALSE, fig.height=12, fig.width=8, out.height="1500px"}
+library(datasauRus)
+library(tidyverse)
+
+dataset_id <- c(
+  "dino", "slant_down", "slant_up", "h_lines", "star", "away",
+  "v_lines", "high_lines", "wide_lines", "bullseye",
+  "x_shape", "circle", "dots"
+)
+
+datasaurus_dozen$dataset <- factor(datasaurus_dozen$dataset, levels = dataset_id)
 
 datasaurus_dozen %>% 
-  filter(dataset %in% dataset_id[1:4]) %>% 
+  filter(dataset %in% dataset_id) %>% 
   ggplot(aes(x = x, y = y, colour = dataset)) +
   geom_point() +
-  geom_smooth(method = "lm", se=F)+
-  theme_bw() +
-  theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  theme_light() +
+  theme(
+    legend.position = "none",
+    strip.background = element_blank(),
+    strip.text = element_blank()
+  ) +
+  labs(x = "Age", y = "Sales") +
   facet_wrap(~dataset, ncol = 2)
 ```
+
+------------------------------------------------------------------------
+
+In all of these they have the same properties
+
+::: incrementatal
+-   N: 142
+-   Mean Age: 54.26
+-   Mean Sales: 47.83
+-   SD Age: 16.76
+-   SD Sales: 26.93
+-   Correlation: -0.06
+-   Adapted from @gillespie
+:::
 
 # Simpson's Paradox
 
@@ -197,25 +177,35 @@ datasaurus_dozen %>%
   ggplot(aes(x = x, y = y, colour = dataset)) +
   geom_point() +
   geom_smooth(method = "lm", se=F)+
-  theme_bw() +
+  theme_light() +
   theme(legend.position = "none",strip.background = element_blank(), strip.text = element_blank()) +
+  labs(x="Age",y="Sales")+
   facet_wrap(~dataset, ncol = 2)
 ```
 
-These are dataset 2 and 3 from earlier
+These are dataset 2 and 3 from the previous slide
 
 ## But what happens if we now add labels to the data?
 
 Dataset 2
 
 ```{r, message=FALSE,echo=FALSE}
-dataset2a=read.csv("data/activity2/dataset2a.csv")
-dataset2a$label=factor(dataset2a$label, levels=c("Gen A", "Gen Z", "Millennial", "Gen X", "Boomer"))
+dataset2a=read.csv("data/activity2/dataset2a.csv") %>% 
+  merge(tribble(~"label", ~"label2",
+               "Gen A", "Africa",
+               "Gen Z", "Asia",
+               "Millennial", "S America",
+               "Gen X", "Europe",
+               "Boomer", "N America")) %>% 
+  select("Age"=x,
+         "Sales"=y,
+         "Region"=label2) 
+dataset2a$Region=factor(dataset2a$Region, levels=c("Africa", "Asia", "S America", "Europe","N America"))
 cat("Our dataset\n")
-dataset2a %>% 
+dataset2a %>%
   sample_n(10)
 
-levels(dataset2a$label)
+levels(dataset2a$Region)
 
 
 ```
@@ -223,24 +213,21 @@ levels(dataset2a$label)
 ------------------------------------------------------------------------
 
 ```{r, message=FALSE,echo=FALSE}
-dataset2a %>% 
-  ggplot(aes(x = x, y = y, colour = label)) +
+a2=dataset2a %>% 
+  ggplot(aes(x = Age, y = Sales, colour = Region)) +
   geom_point() +
   # geom_smooth(method = "lm", se=F)+
-  theme_bw()+
-  labs(colour="Generation")
+  theme_light()+
+  labs(colour="Region")
+a2
 
 ```
 
 ------------------------------------------------------------------------
 
 ```{r, message=FALSE,echo=FALSE}
-dataset2a %>% 
-  ggplot(aes(x = x, y = y, colour = label)) +
-  geom_point() +
-  geom_smooth(method = "lm", se=F)+
-  theme_bw()+
-  labs(colour="Generation")
+a2+
+  geom_smooth(method = "lm", se=F)
 
 ```
 
@@ -249,16 +236,24 @@ dataset2a %>%
 and similarly for dataset 3
 
 ```{r, message=FALSE,echo=FALSE}
-dataset3a=read.csv("data/activity2/dataset3a.csv")
-dataset3a$label=factor(dataset3a$label, levels=c("Gen A", "Gen Z", "Millennial", "Gen X", "Boomer"))
+dataset3a=read.csv("data/activity2/dataset3a.csv") %>% 
+  merge(tribble(~"label", ~"label2",
+               "Gen A", "Africa",
+               "Gen Z", "Asia",
+               "Millennial", "S America",
+               "Gen X", "Europe",
+               "Boomer", "N America")) %>% 
+  select("Age"=x,
+         "Sales"=y,
+         "Region"=label2) 
+dataset3a$Region=factor(dataset3a$Region, levels=c("Africa", "Asia", "S America", "Europe","N America"))
 
-dataset3a %>% 
-  ggplot(aes(x = x, y = y, colour = label)) +
+a3=dataset3a %>% 
+  ggplot(aes(x = Age, y = Sales, colour = Region)) +
   geom_point() +
-  # geom_smooth(method = "lm", se=F)+
   theme_bw()+
-  labs(colour="Generation")
-
+  labs(colour="Region")
+a3
 
 ```
 
@@ -267,15 +262,7 @@ dataset3a %>%
 and similarly for dataset 3
 
 ```{r, message=FALSE,echo=FALSE}
-dataset3a=read.csv("data/activity2/dataset3a.csv")
-dataset3a$label=factor(dataset3a$label, levels=c("Gen A", "Gen Z", "Millennial", "Gen X", "Boomer"))
-
-dataset3a %>% 
-  ggplot(aes(x = x, y = y, colour = label)) +
-  geom_point() +
-  geom_smooth(method = "lm", se=F)+
-  theme_bw()+
-  labs(colour="Generation")
+a3+geom_smooth(method="lm", se=F)
 
 
 ```
@@ -289,13 +276,71 @@ dataset3a %>%
 
 ::: {.column width="60%"}
 -   This is what we call Simpson's Paradox [@simpson1951; @kievit2013].
--   Sometimes the direction of the correlation changes when we look at each subgroup
+-   It is when the direction of the correlation changes when we look at each subgroup
 :::
 :::::
 
 ------------------------------------------------------------------------
 
-![](img/Simpsons_paradox_-_animation.gif) 
+![](img/Simpsons_paradox_-_animation.gif)
+
+# Crimes against data: a quiz
+
+------------------------------------------------------------------------
+
+![](images/clipboard-3165625605.png){width="70%"}
+
+::: fragment
+Make sure that your inputs make sense
+:::
+
+------------------------------------------------------------------------
+
+![](images/clipboard-2281188523.png){width="20%"}
+
+::: fragment
+Don't truncate your y-axis on a bar chart
+:::
+
+------------------------------------------------------------------------
+
+![](images/clipboard-4280499671.png){width="70%"}
+
+::: fragment
+Make your bars proportional
+:::
+
+------------------------------------------------------------------------
+
+![](images/clipboard-4077368076.png)
+
+::: fragment
+Good should be at the top!!
+:::
+
+------------------------------------------------------------------------
+
+![](images/clipboard-3101577651.png)
+
+::: fragment
+If there is a sensible colour available, use it and use consistently
+:::
+
+------------------------------------------------------------------------
+
+![](images/clipboard-43354252.png)
+
+::: fragment
+Are your samples representative?
+:::
+
+------------------------------------------------------------------------
+
+![](images/clipboard-476200296.png)
+
+::: fragment
+This is just cursed
+:::
 
 # Thank you
 

@@ -11,7 +11,7 @@
     "href": "index.html#what-are-we-doing-today",
     "title": "MPDM Guest Lecture",
     "section": "What are we doing today?",
-    "text": "What are we doing today?\n\nWarm up activity\nExploratory data analysis\nSimpson’s paradox"
+    "text": "What are we doing today?\n\nMenti\nGuess the data\nInfographics\nSimpson’s paradox"
   },
   {
     "objectID": "index.html#warm-up-activity",
@@ -102,14 +102,14 @@
     "href": "index.html#what-do-we-notice-here",
     "title": "MPDM Guest Lecture",
     "section": "What do we notice here?",
-    "text": "What do we notice here?\n\nThese are dataset 2 and 3 from earlier"
+    "text": "What do we notice here?\n\nThese are dataset 2 and 3 from the previous slide"
   },
   {
     "objectID": "index.html#but-what-happens-if-we-now-add-labels-to-the-data",
     "href": "index.html#but-what-happens-if-we-now-add-labels-to-the-data",
     "title": "MPDM Guest Lecture",
     "section": "But what happens if we now add labels to the data?",
-    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n          x        y      label\n1  69.91943 29.31109 Millennial\n2  50.71330 48.77229 Millennial\n3  20.93200 51.64624      Gen Z\n4  45.41264 53.87080 Millennial\n5  50.43386 18.53487      Gen Z\n6  77.44900 72.44731     Boomer\n7  50.22442 19.17097      Gen Z\n8  95.44349 36.18970      Gen X\n9  59.31506 12.35431      Gen Z\n10 78.87658 71.56253     Boomer\n\n\n[1] \"Gen A\"      \"Gen Z\"      \"Millennial\" \"Gen X\"      \"Boomer\""
+    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n        Age    Sales    Region\n1  95.59342 33.23413    Europe\n2  66.74819 84.00483 N America\n3  49.93675 21.59010      Asia\n4  69.45986 30.19703 S America\n5  55.74124 46.65358 S America\n6  32.96070 35.82311      Asia\n7  51.48771 20.84361      Asia\n8  59.23649 91.48110 N America\n9  31.49703 67.91256 S America\n10 62.29264 40.02953 S America\n\n\n[1] \"Africa\"    \"Asia\"      \"S America\" \"Europe\"    \"N America\""
   },
   {
     "objectID": "index.html#references",
@@ -138,5 +138,26 @@
     "title": "MPDM Guest Lecture",
     "section": "Actions that can be taken?",
     "text": "Actions that can be taken?\n\nGiving vouchers for lapsed customers\nMore prominent up sell if I never get add-ons\nPush notification if there is a quieter shop nearby"
+  },
+  {
+    "objectID": "index.html#but-we-can-actually-extend-this-idea-to-a-much-larger-dataset",
+    "href": "index.html#but-we-can-actually-extend-this-idea-to-a-much-larger-dataset",
+    "title": "MPDM Guest Lecture",
+    "section": "But we can actually extend this idea to a much larger dataset",
+    "text": "But we can actually extend this idea to a much larger dataset"
+  },
+  {
+    "objectID": "index.html#some-best-practice",
+    "href": "index.html#some-best-practice",
+    "title": "MPDM Guest Lecture",
+    "section": "Some best practice",
+    "text": "Some best practice"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "MPDM Guest Lecture",
+    "section": "<>",
+    "text": "&lt;&gt;\nIn all of these they have the same properties\n\n\nN: 142\nMean X: 54.26\nMean Y: 47.83\nSD X: 16.76\nSD Y: 26.93\nCorrelation: -0.06\n(Gillespie et al., no date)"
   }
 ]
