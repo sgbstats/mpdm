@@ -74,6 +74,23 @@ csl: csl/harvard-cite-them-right.csl
 -   Push notification if there is a quieter shop nearby
 :::
 
+---
+
+-   Pick a digital touchpoint that you have hit in the last 24h
+
+-   Now think about the hundreds, thousands, millions of hits that your touchpoint has received
+
+-   What data has been collected?
+
+-   What data can be analysed and how would you analyse it?
+
+-   What actions could you take as a marketeer?
+
+-   Some bits of data are better quality than others
+
+-   Feel free to work quietly in small groups
+
+
 # Guess the data
 
 ![](images/clipboard-3491770170.png)

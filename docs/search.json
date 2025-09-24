@@ -109,7 +109,7 @@
     "href": "index.html#but-what-happens-if-we-now-add-labels-to-the-data",
     "title": "MPDM Guest Lecture",
     "section": "But what happens if we now add labels to the data?",
-    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n        Age    Sales    Region\n1  95.59342 33.23413    Europe\n2  66.74819 84.00483 N America\n3  49.93675 21.59010      Asia\n4  69.45986 30.19703 S America\n5  55.74124 46.65358 S America\n6  32.96070 35.82311      Asia\n7  51.48771 20.84361      Asia\n8  59.23649 91.48110 N America\n9  31.49703 67.91256 S America\n10 62.29264 40.02953 S America\n\n\n[1] \"Africa\"    \"Asia\"      \"S America\" \"Europe\"    \"N America\""
+    "text": "But what happens if we now add labels to the data?\nDataset 2\n\n\nOur dataset\n\n\n        Age     Sales    Region\n1  54.86350 14.009612      Asia\n2  59.31099 10.572136      Asia\n3  40.00266 27.487510      Asia\n4  36.43472 62.294045 S America\n5  59.97042  7.913310      Asia\n6  55.74124 46.653577 S America\n7  50.74172 17.838406      Asia\n8  67.30258 64.413463    Europe\n9  62.30775  5.749975      Asia\n10 46.90954 85.602261    Europe\n\n\n[1] \"Africa\"    \"Asia\"      \"S America\" \"Europe\"    \"N America\""
   },
   {
     "objectID": "index.html#references",
